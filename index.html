@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buck's Western Shop | Chihuahua</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="logo">BUCK'S WESTERN SHOP</div>
+        <a href="#catalogo" class="btn-outline-sm">Ver Colección</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="badge-location">PLAZA EL PASTIZAL — CHIHUAHUA</span>
+            <h1>WESTERN NEVER DIES</h1>
+            <p class="subtitle">Indumentaria, calzado y accesorios western de alta calidad.</p>
+            <div class="hero-buttons">
+                <a href="#contacto" class="btn-gold">Consultar Disponibilidad</a>
+                <a href="#catalogo" class="btn-secondary">Explorar Catálogo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="quick-info">
+        <div class="info-card">
+            <h4>UBICACIÓN</h4>
+            <p>Plaza Comercial El Pastizal, Carr. a Cuauhtémoc 8 - Local #8, Labor de Terrazas, Chihuahua, Chih.</p>
+        </div>
+        <div class="info-card">
+            <h4>HORARIO</h4>
+            <p>Lunes a Domingo<br>11:00 a.m. – 8:00 p.m.</p>
+        </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section class="catalog" id="catalogo">
+        <h2 class="section-title">NUESTRAS CATEGORÍAS</h2>
+        <div class="divider"></div>
+
+        <div class="catalog-grid">
+            <div class="category-card">
+                <div class="card-body">
+                    <h3>Botas y Calzado Premium</h3>
+                    <p>Diseños artesanales en pieles seleccionadas, durabilidad y confort de nivel superior.</p>
+                    <button class="btn-select" onclick="consultarProducto('Botas y Calzado Premium')">Cotizar por WhatsApp</button>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <div class="card-body">
+                    <h3>Camisas y Chaquetas Western</h3>
+                    <p>Cortes clásicos y contemporáneos de marcas icónicas como Ariat y Pro Hats.</p>
+                    <button class="btn-select" onclick="consultarProducto('Camisas y Chaquetas Western')">Cotizar por WhatsApp</button>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <div class="card-body">
+                    <h3>Sombreros y Texanas</h3>
+                    <p>Hormas exclusivas, calidad premium en materiales para cualquier ocasión.</p>
+                    <button class="btn-select" onclick="consultarProducto('Sombreros y Texanas')">Cotizar por WhatsApp</button>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <div class="card-body">
+                    <h3>Accesorios y Marroquinería</h3>
+                    <p>Cinturones, hebillas y complementos de piel con acabado fino.</p>
+                    <button class="btn-select" onclick="consultarProducto('Accesorios y Marroquinería')">Cotizar por WhatsApp</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact" id="contacto">
+        <div class="contact-box">
+            <h2>ATENCIÓN PERSONALIZADA</h2>
+            <p>¿Buscas una talla, modelo o marca específica? Envíanos un mensaje directo a la tienda.</p>
+
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="categoria">Categoría de interés:</label>
+                    <select id="categoria" required>
+                        <option value="Botas y Calzado Premium">Botas y Calzado Premium</option>
+                        <option value="Camisas y Chaquetas Western">Camisas y Chaquetas Western</option>
+                        <option value="Sombreros y Texanas">Sombreros y Texanas</option>
+                        <option value="Accesorios y Marroquinería">Accesorios y Marroquinería</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Consulta o prenda que busca:</label>
+                    <input type="text" id="mensaje" placeholder="Ej. Talla de botas, modelos en existencia, etc." required>
+                </div>
+
+                <button type="submit" class="btn-gold-block">Contactar por WhatsApp</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Buck's Western Shop. Todos los derechos reservados.</p>
+        <p class="credit">Desarrollado por <a href="#">Emiliano Romero</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
